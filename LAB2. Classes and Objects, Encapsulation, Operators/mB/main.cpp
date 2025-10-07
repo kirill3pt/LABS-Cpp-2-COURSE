@@ -21,10 +21,6 @@ int main()
         Vector v(18);
         v.initArray();
         v.print1D();
-        ++v;
-        v.print1D();
-        --v;
-        v.print1D();
     }
     return 0;
 }
