@@ -23,6 +23,8 @@ int main()
         v.print1D();
         ++v;
         v.print1D();
+        --v;
+        v.print1D();
     }
     return 0;
 }
