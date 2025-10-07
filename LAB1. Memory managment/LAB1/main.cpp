@@ -15,7 +15,7 @@ int main() {
     setlocale(LC_CTYPE, "rus");
 
     int choice;
-    cout << "1 - задание 1;\n2 - задание 2;\n3 - задание 3; ";
+    cout << "1 - задание 1;\n2 - задание 2;\n3 - задание 3;  ";
     cin >> choice;
     tasks task;
     switch (choice) {
