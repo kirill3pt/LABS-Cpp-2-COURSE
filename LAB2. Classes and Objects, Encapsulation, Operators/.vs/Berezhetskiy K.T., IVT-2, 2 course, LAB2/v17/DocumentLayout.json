@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|solutionrelative:mB\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,6 +36,19 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-07T23:48:25.539Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -44,7 +60,7 @@
               "RelativeDocumentMoniker": "mB\\main.cpp",
               "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\main.cpp",
               "RelativeToolTip": "mB\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wBAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-07T23:22:25.234Z",
               "EditorCaption": ""
