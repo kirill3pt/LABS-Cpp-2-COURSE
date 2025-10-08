@@ -7,7 +7,12 @@
       "RelativeMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|solutionrelative:mB\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\forEX1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|solutionrelative:mB\\forEX1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FDF5FB2F-5DD9-477B-BBA7-C822C8A00651}|mB\\mB.vcxproj|solutionrelative:mB\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,19 +43,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore",
-              "RelativeDocumentMoniker": "..\\.gitignore",
-              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\.gitignore",
-              "RelativeToolTip": "..\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-07T23:48:25.539Z",
+              "Title": "forEX1.h",
+              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\forEX1.h",
+              "RelativeDocumentMoniker": "mB\\forEX1.h",
+              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\forEX1.h",
+              "RelativeToolTip": "mB\\forEX1.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-08T19:26:36.979Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -58,11 +59,24 @@
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\main.cpp",
               "RelativeDocumentMoniker": "mB\\main.cpp",
-              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\main.cpp",
-              "RelativeToolTip": "mB\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wBAAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\main.cpp*",
+              "RelativeToolTip": "mB\\main.cpp*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-07T23:22:25.234Z",
+              "WhenOpened": "2025-10-08T19:26:41.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ex1.cpp",
+              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\ex1.cpp",
+              "RelativeDocumentMoniker": "mB\\ex1.cpp",
+              "ToolTip": "C:\\Users\\Kirill\\Desktop\\all\\\u0423\u0447\u0451\u0431\u0430\\2 \u041A\u0423\u0420\u0421\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\Lab\u0027s\\LABS-Cpp-2-COURSE\\LAB2. Classes and Objects, Encapsulation, Operators\\mB\\ex1.cpp",
+              "RelativeToolTip": "mB\\ex1.cpp",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwJMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-08T19:26:29.864Z",
               "EditorCaption": ""
             }
           ]

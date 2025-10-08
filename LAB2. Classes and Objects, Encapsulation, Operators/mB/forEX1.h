@@ -13,10 +13,13 @@ public:
     void print1D(); // вывод элементов
     ~Vector(); // деструктор
     int& operator[](int index);
-    Vector& operator++();     // префикс ++v
-    Vector operator++(int);   // постфикс v++
-    Vector& operator--();     // префикс --v
-    Vector operator--(int);   // постфикс v--
+    Vector& operator++();     // ++v
+    Vector operator++(int);   // v++
+    Vector& operator--();     // --v
+    Vector operator--(int);   // v--
+    int* getData() {
+        return data_;
+    }
 };
 
 class Matrix {
@@ -28,7 +31,12 @@ public:
     Matrix(int r, int c);       // конструктор
     ~Matrix();                  // деструктор
 
+    void convert1Dto2D(const int* arr, int totalSize);
+    void print2D();
     int at(int i, int j) const;        // получить значение
     void setAt(int i, int j, int val); // установить значение
-    void print() const;                // печать
+    Matrix& operator++();     // ++m
+    Matrix operator++(int);   // m++
+    Matrix& operator--();     // --m
+    Matrix operator--(int);   // m--
 };
