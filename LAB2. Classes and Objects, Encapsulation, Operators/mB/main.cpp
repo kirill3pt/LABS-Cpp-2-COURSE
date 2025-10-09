@@ -8,6 +8,7 @@
 #include <string>
 #include "forEX1.h"
 #include "forEX2.h"
+#include "forEX3.h"
 
 using namespace std;
 int main()
@@ -116,6 +117,68 @@ int main()
             cout << "СЧЁТЧИК ВСЕХ ДРОБЕЙ: " << Fraction::getCount() << "\n";
         } while (true);
         break;
+    }
+    case 3: {
+        Conditioner* cond1 = new Conditioner("LG", "CoolX", 14.5, 25.0, "Ожидание", 2022);
+        Conditioner* cond2 = new Conditioner("Samsung", "WindPro", 13.0, 23.5, "Ожидание", 2023);
+        Conditioner cond3;
+        cond3.setFirm("Daikin");
+        cond3.setModel("FTXF35");
+        cond3.setWeight(12.8);
+        cond3.setTemperature(24.0);
+        cond3.setMode("Ожидание");
+        cond3.setYear(2021);
+        double totalChange = 0; 
+        int totalCount = 0;
+        for (int i = 1; i <= 3; i++) {
+            cout << "\n=== Настройка #" << i << " ===" << endl;
+            int choice;
+            double temp;
+            string mode;
+            cout << "Выберите режим для всех кондиционеров:\n";
+            cout << "1 — Охлаждение\n2 — Нагрев\n3 — Ожидание\n";
+            cout << "Ваш выбор: ";
+            cin >> choice;
+
+            if (choice == 1) {
+                mode = "Охлаждение";
+                cout << "На сколько градусов охладить: ";
+                cin >> temp;
+            }
+            else if (choice == 2) {
+                mode = "Нагрев";
+                cout << "На сколько градусов нагреть: ";
+                cin >> temp;
+            }
+            else {
+                mode = "Ожидание";
+                temp = 0;
+            }
+            cond1->settings(mode, temp);
+            cond2->settings(mode, temp);
+            cond3.settings(mode, temp);
+            if (temp != 0) {
+                totalChange += temp;
+                totalCount++;
+            }
+        }
+        cout << "\n=== Итоговая информация ===\n";
+        cond1->print();
+        cond2->print();
+        cond3.print();
+        double avgChange = (totalCount > 0) ? totalChange / totalCount : 0;
+        cout << "Среднее изменение температуры за период: " << avgChange << " градусов\n";
+        cond1->serialize("cond1.txt");
+        cond2->serialize("cond2.txt");
+        cond3.serialize("cond3.txt");
+        //cond3.serialize();
+        cout << "\nДанные сохранены в файлы cond1.txt, cond2.txt, cond3.txt\n";
+        /*Conditioner test;
+        test.deserialize("cond1.txt");
+        cout << "\nПроверка чтения из файла:\n";
+        test.print();*/
+        delete cond1;
+        delete cond2;
     }
     }
     return 0;
