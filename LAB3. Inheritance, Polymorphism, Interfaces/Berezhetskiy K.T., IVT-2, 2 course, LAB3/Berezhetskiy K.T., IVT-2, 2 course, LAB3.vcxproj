@@ -124,18 +124,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CustomExpressionEvaluator.cpp" />
+    <ClCompile Include="Divisor.cpp" />
     <ClCompile Include="ExpressionEvaluator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Multiplier.cpp" />
-    <ClCompile Include="Summator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomExpressionEvaluator.h" />
+    <ClInclude Include="Divisor.h" />
     <ClInclude Include="ExpressionEvaluator.h" />
     <ClInclude Include="ILoggable.h" />
     <ClInclude Include="IShuffle.h" />
     <ClInclude Include="Multiplier.h" />
-    <ClInclude Include="Summator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

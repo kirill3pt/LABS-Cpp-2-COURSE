@@ -3,9 +3,9 @@
 #include "IShuffle.h"
 #include <iostream>
 
-class Multiplier : public ExpressionEvaluator, public IShuffle {
+class Divisor : public ExpressionEvaluator, public IShuffle {
 public:
-	Multiplier(int count);
+	Divisor(int count);
 	double calculate() const override;
 	void shuffle() override;                // отсортировать по возрастанию
 	void shuffle(size_t i, size_t j) override; // обмен при дробной части

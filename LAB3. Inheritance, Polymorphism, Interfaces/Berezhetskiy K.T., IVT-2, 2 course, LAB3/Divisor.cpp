@@ -1,19 +1,26 @@
 #include <iostream>
-#include "Multiplier.h"
+#include "Divisor.h"
+#include <algorithm>
 
-Multiplier::Multiplier(int count) : ExpressionEvaluator(count) {}
+Divisor::Divisor(int count) : ExpressionEvaluator(count) {}
 
-double Multiplier::calculate() const {
-	double result = 1.0;
+double Divisor::calculate() const {
+	double result = operands[0];
 	for (int i = 0; i < count; i++) {
-		result *= operands[i];
+		if (operands[i] == 0) {
+			std::cout << "Ошибка: деление на ноль!\n";
+			return 0.0;
+		}
+		result /= operands[i];
 	}
 	return result;
 }
-void Multiplier::shuffle() {
+
+void Divisor::shuffle() {
 	for (int i = 0; i < count - 1; i++) {
 		for (int j = 0; j < count - 1 - i; j++) {
 			if (operands[j] > operands[j + 1]) {
+				// поменять местами
 				double temp = operands[j];
 				operands[j] = operands[j + 1];
 				operands[j + 1] = temp;
@@ -22,7 +29,7 @@ void Multiplier::shuffle() {
 	}
 }
 
-void Multiplier::shuffle(size_t i, size_t j) {
+void Divisor::shuffle(size_t i, size_t j) {
 	if (i >= count || j >= count) {
 		return;
 	}
@@ -42,11 +49,10 @@ void Multiplier::shuffle(size_t i, size_t j) {
 		operands[j] = temp;
 	}
 }
-
-void Multiplier::logToScreen() const {
+void Divisor::logToScreen() const {
 	std::cout << operands[0];
 	for (int i = 1; i < count; i++) {
-		std::cout << " * ";
+		std::cout << " / ";
 		if (operands[i] < 0) {
 			std::cout << "(" << operands[i] << ")";
 		}
@@ -59,7 +65,7 @@ void Multiplier::logToScreen() const {
 	std::cout << std::endl;
 }
 
-void Multiplier::logToFile(const std::string& filename) const {
+void Divisor::logToFile(const std::string& filename) const {
 	std::ofstream file(filename, std::ios::app);
 	if (!file.is_open()) {
 		std::cerr << "Ошибка: не удалось открыть файл " << filename << std::endl;
@@ -67,7 +73,7 @@ void Multiplier::logToFile(const std::string& filename) const {
 	}
 	file << operands[0];
 	for (int i = 1; i < count; i++) {
-		file << " * ";
+		file << " / ";
 		if (operands[i] < 0) {
 			file << "(" << operands[i] << ")";
 		}

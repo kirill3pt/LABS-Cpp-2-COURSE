@@ -27,14 +27,11 @@
     <ClCompile Include="Multiplier.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Summator.cpp">
+    <ClCompile Include="Divisor.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Summator.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Multiplier.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -48,6 +45,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CustomExpressionEvaluator.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Divisor.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
