@@ -44,14 +44,15 @@ void Multiplier::shuffle(size_t i, size_t j) {
 }
 
 void Multiplier::logToScreen() const {
-	std::cout << operands[0];
-	for (int i = 1; i < count; i++) {
-		std::cout << " * ";
+	for (int i = 0; i < count; i++) {
 		if (operands[i] < 0) {
 			std::cout << "(" << operands[i] << ")";
 		}
 		else {
 			std::cout << operands[i];
+		}
+		if (i != count - 1) {
+			std::cout << " * ";
 		}
 	}
 	std::cout << " < Total " << count << " >" << std::endl;
@@ -60,22 +61,17 @@ void Multiplier::logToScreen() const {
 }
 
 void Multiplier::logToFile(const std::string& filename) const {
-	std::ofstream file(filename, std::ios::app);
-	if (!file.is_open()) {
-		std::cerr << "Ошибка: не удалось открыть файл " << filename << std::endl;
-		return;
-	}
-	file << operands[0];
+	std::ofstream log(filename, std::ios::app);
 	for (int i = 1; i < count; i++) {
-		file << " * ";
 		if (operands[i] < 0) {
-			file << "(" << operands[i] << ")";
+			log << "(" << operands[i] << ")";
 		}
 		else {
-			file << operands[i];
+			log << operands[i];
 		}
+		log << " * ";
 	}
-	file << " < Total " << count << " >\n";
-	file << "< Result " << calculate() << " >\n\n";
-	file.close();
+	log << " < Total " << count << " >\n";
+	log << "< Result " << calculate() << " >\n\n";
+	log.close();
 }

@@ -1,12 +1,11 @@
 #include <iostream>
 #include "Divisor.h"
-#include <algorithm>
 
 Divisor::Divisor(int count) : ExpressionEvaluator(count) {}
 
 double Divisor::calculate() const {
 	double result = operands[0];
-	for (int i = 0; i < count; i++) {
+	for (int i = 1; i < count; i++) {
 		if (operands[i] == 0) {
 			std::cout << "Ошибка: деление на ноль!\n";
 			return 0.0;
@@ -20,7 +19,6 @@ void Divisor::shuffle() {
 	for (int i = 0; i < count - 1; i++) {
 		for (int j = 0; j < count - 1 - i; j++) {
 			if (operands[j] > operands[j + 1]) {
-				// поменять местами
 				double temp = operands[j];
 				operands[j] = operands[j + 1];
 				operands[j + 1] = temp;
@@ -50,14 +48,15 @@ void Divisor::shuffle(size_t i, size_t j) {
 	}
 }
 void Divisor::logToScreen() const {
-	std::cout << operands[0];
-	for (int i = 1; i < count; i++) {
-		std::cout << " / ";
+	for (int i = 0; i < count; i++) {
 		if (operands[i] < 0) {
 			std::cout << "(" << operands[i] << ")";
 		}
 		else {
 			std::cout << operands[i];
+		}
+		if (i != count - 1) {
+			std::cout << " / ";
 		}
 	}
 	std::cout << " < Total " << count << " >" << std::endl;
@@ -66,22 +65,17 @@ void Divisor::logToScreen() const {
 }
 
 void Divisor::logToFile(const std::string& filename) const {
-	std::ofstream file(filename, std::ios::app);
-	if (!file.is_open()) {
-		std::cerr << "Ошибка: не удалось открыть файл " << filename << std::endl;
-		return;
-	}
-	file << operands[0];
-	for (int i = 1; i < count; i++) {
-		file << " / ";
+	std::ofstream log(filename, std::ios::app | std::ios_base::out);
+	for (int i = 0; i < count; i++) {
 		if (operands[i] < 0) {
-			file << "(" << operands[i] << ")";
+			log << "(" << operands[i] << ")";
 		}
 		else {
-			file << operands[i];
+			log << operands[i];
 		}
+		log << " / ";
 	}
-	file << " < Total " << count << " >\n";
-	file << "< Result " << calculate() << " >\n\n";
-	file.close();
+	log << " < Total " << count << " >\n";
+	log << "< Result " << calculate() << " >\n\n";
+	log.close();
 }
