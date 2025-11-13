@@ -38,6 +38,7 @@ void CustomExpressionEvaluator::logToScreen() const {
 
 void CustomExpressionEvaluator::logToFile(const std::string& filename) const {
     std::ofstream log(filename, std::ios::app | std::ios_base::out);
+    log << "Log Record\n";
     log << operands[0];
     for (int i = 1; i + 1 < count; i += 2) {
         log << " + ";

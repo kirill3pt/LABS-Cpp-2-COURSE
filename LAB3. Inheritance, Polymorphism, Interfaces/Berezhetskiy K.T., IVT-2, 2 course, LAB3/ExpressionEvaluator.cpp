@@ -58,32 +58,28 @@ void ExpressionEvaluator::logToScreen() const {
 }
 
 void ExpressionEvaluator::logToFile(const std::string& filename) const {
-	std::ofstream file(filename, std::ios::app);
-	if (!file.is_open()) {
-		std::cerr << "Ошибка: не удалось открыть файл " << filename << std::endl;
-		return;
-	}
-	file << operands[0];
+	std::ofstream log(filename, std::ios::app | std::ios_base::out);
+	log << operands[0];
 	for (int i = 1; i + 1 < count; i += 2) {
-		file << " + ";
+		log << " + ";
 		if (operands[i] < 0) {
-			file << "(" << operands[i] << ")";
+			log << "(" << operands[i] << ")";
 		}
 		else {
-			file << operands[i];
+			log << operands[i];
 		}
-		file << " * ";
+		log << " * ";
 		if (operands[i + 1] < 0) {
-			file << "(" << operands[i + 1] << ")";
+			log << "(" << operands[i + 1] << ")";
 		}
 		else {
-			file << operands[i + 1];
+			log << operands[i + 1];
 		}
 	}
 	if (count % 2 == 0) {
-		file << " + " << operands[count - 1];
+		log << " + " << operands[count - 1];
 	}
-	file << " < Total " << count << " >\n";
-	file << "< Result " << calculate() << " >\n\n";
-	file.close();
+	log << " < Total " << count << " >\n";
+	log << "< Result " << calculate() << " >\n\n";
+	log.close();
 }

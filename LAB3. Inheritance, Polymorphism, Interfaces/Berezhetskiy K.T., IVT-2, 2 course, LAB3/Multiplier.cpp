@@ -69,7 +69,9 @@ void Multiplier::logToFile(const std::string& filename) const {
 		else {
 			log << operands[i];
 		}
-		log << " * ";
+		if (i != count - 1) {
+			log << " * ";
+		}
 	}
 	log << " < Total " << count << " >\n";
 	log << "< Result " << calculate() << " >\n\n";
