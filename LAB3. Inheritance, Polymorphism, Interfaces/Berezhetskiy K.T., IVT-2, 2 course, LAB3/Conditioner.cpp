@@ -7,29 +7,33 @@ Conditioner::Conditioner(std::string firm, std::string model, double weight, int
     : HouseholdDevice(firm, model, weight, year, power), temperature_(temperature), mode_(mode){ }
 
 void Conditioner::control(int temperature) {
-    if (temperature < 10)
-    {
+    std::cout << "[Кондиционер]. Получена температура: " << temperature << "\n";
+
+    if (temperature < 10) {
         std::cout << "Температура слишком низкая! Кондиционер выключается.\n";
         mode_ = 0;
         return;
     }
-    if (temperature > 10) {
+    if (temperature <= 18) {
         mode_ = 1;
     }
-    else if (temperature > 20) {
+    else if (temperature <= 25) {
         mode_ = 2;
     }
     else {
         mode_ = 3;
     }
-    std::cout << "Обогреватель настроен. Новый режим: " << mode_ << "\n";
+
+    temperature_ = temperature;
+
+    std::cout << "Кондиционер настроен. Новый режим: " << mode_ << "\n";
 }
 void Conditioner::print() const
 {
     std::cout << "Кондиционер — " << firm_ << " " << model_
         << ", " << weight_ << " кг, "
         << "Год: " << year_ << ", Мощность: " << power_
-        << "Вт, Темп: " << temperature_
+        << " Вт, Температура: " << temperature_
         << ", Режим: " << mode_
         << "\n";
 }
