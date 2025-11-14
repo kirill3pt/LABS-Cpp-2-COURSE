@@ -123,17 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Conditioner.cpp" />
     <ClCompile Include="CustomExpressionEvaluator.cpp" />
     <ClCompile Include="Divisor.cpp" />
     <ClCompile Include="ex2.cpp" />
     <ClCompile Include="ExpressionEvaluator.cpp" />
+    <ClCompile Include="Heater.cpp" />
+    <ClCompile Include="HouseholdDevice.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Multiplier.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Conditioner.h" />
     <ClInclude Include="CustomExpressionEvaluator.h" />
     <ClInclude Include="Divisor.h" />
-    <ClInclude Include="ex2.h" />
+    <ClInclude Include="Heater.h" />
+    <ClInclude Include="HouseholdDevice.h" />
+    <ClInclude Include="IControllable.h" />
     <ClInclude Include="ExpressionEvaluator.h" />
     <ClInclude Include="ILoggable.h" />
     <ClInclude Include="IShuffle.h" />

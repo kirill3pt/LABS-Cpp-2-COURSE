@@ -5,11 +5,16 @@
 #include "Divisor.h"
 #include "Multiplier.h"
 #include "IShuffle.h"
+#include "IControllable.h"
+#include "Heater.h"
+#include "HouseholdDevice.h"
+#include "Conditioner.h"
 
 int main() {
 	setlocale(LC_ALL, "rus");
 	int choice;
-	std::cout << "Введите № задания:\n1 - Задание №1; ";
+	std::cout << "Введите № задания:\n1 - Задание №1; " << std::endl
+		<< "2 - Задание №2: ";
 	std::cin >> choice;
 	switch (choice) {
 	case 1: {
@@ -67,7 +72,40 @@ int main() {
 				std::cout << "Объект " << i + 1 << " не реализует интерфейс IShuffle\n";
 			}
 		}
+		break;
 	}
-		  return 0;
+	case 2: {
+		/*Класс КОНДИЦИОНЕР + классы БЫТОВОЕ УСТРОЙСТВО, ОБОГРЕВАТЕЛЬ.
+			Реализовать схему наследования классов и корректно распределить по классам данные :
+		фирма, модель, вес, температура, режим, год выпуска, мощность.
+			Интерфейс возможности управления / регулировки устройства IControllable с
+			методом void control(int temperature) – отрегулировать устройство в зависимости
+			от установленной в параметре температуры.Реализация метода в классе кондиционера :
+		если температура задана меньше 10 градусов, то выдать сообщение и выключиться,
+			иначе присвоить текущему режиму разный номер в зависимости от температуры(т.е.
+				выставить режим).Реализация метода в классе обогревателя : если задана температура
+			выше 45 градусов, то выдать сообщение и выключиться, иначе присвоить текущему
+			режиму разный номер в зависимости от температуры.В main() создать 2 кондиционера
+			и 1 обогреватель, продемонстрировать полиморфизм control().*/
+		IControllable* devices[3];
+		devices[0] = new Conditioner("LG", "CoolX", 14.5, 2022, 1200, 24);
+		devices[1] = new Conditioner("Samsung", "WindPro", 13.0, 2023, 1300, 22);
+		devices[2] = new Heater("Ballu", "HotMaster", 6.5, 2020, 1500, 30);
+		std::cout << "\nДемонстрация полиморфизма control()\n";
+		for (int i = 0; i < 3; i++) {
+			std::cout << "\nУстройство №" << i + 1 << std::endl;
+			devices[i]->control(15 + (i * 10));
+		}
+		std::cout << "\nИнформация об устройствах:\n";
+		for (int i = 0; i < 3; i++) {
+			HouseholdDevice* info = dynamic_cast<HouseholdDevice*>(devices[i]);
+			info->print();
+		}
+		for (int i = 0; i < 3; i++) {
+			delete devices[i];
+		}
+		break;
 	}
+	}
+	return 0;
 }
