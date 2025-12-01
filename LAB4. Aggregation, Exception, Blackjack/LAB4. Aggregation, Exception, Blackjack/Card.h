@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 enum class Suit
 {
     Hearts,   // 0 
@@ -13,5 +14,10 @@ protected:
     short rank_;
 public:
     Card();
-    Card(Suit suit, size_t numberCard);
+    Card(Suit suit, short rank);
+    short getRank() const { return rank_; }
+    Suit getSuit() const { return suit_; }
+    int getValue() const;
+    bool isAce() const { return rank_ == 14; }
+    std::string toString() const;
 };
