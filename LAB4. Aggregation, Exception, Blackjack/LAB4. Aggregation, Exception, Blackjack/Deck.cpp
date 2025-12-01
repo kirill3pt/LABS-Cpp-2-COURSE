@@ -43,15 +43,15 @@ Card Deck::dealCard() {
 }
 std::vector<int> Deck::cardsLeftEach() const {
     std::vector<int> counts;
-    for (const auto& d : decks) {
-        counts.push_back(static_cast<int>(d.size()));
+    for (size_t i = 0; i < decks.size(); ++i) {
+        counts.push_back(static_cast<int>(decks[i].size()));
     }
     return counts;
 }
 size_t Deck::totalCardsLeft() const {
     size_t total = 0;
-    for (const auto& d : decks) {
-        total += d.size();
+    for (size_t i = 0; i < decks.size(); ++i) {
+        total += decks[i].size();
     }
     return total;
 }
