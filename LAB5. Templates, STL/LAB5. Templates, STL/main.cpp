@@ -5,13 +5,15 @@
 #include "DataManager.h"
 #include "Text.h"
 #include "Book.h"
+#include "Book4th.h"
 #include "BookSorter.h"
 #include "BookFinder.h"
+#include "Cache.h"
 
 int main() {
     setlocale(LC_ALL, "rus");
     int choice;
-    std::cout << "Выберите задание:\n1 - задание №1\n2 - задание №2\n3 - задание №3\n4 - задание №4: ";
+    std::cout << "Выберите задание:\n1 - задание №1\n2 - задание №2\n3 - задание №3\n4 - задание №4\n5 - задание №5: ";
     std::cin >> choice;
     switch (choice) {
     case 1: {
@@ -97,7 +99,23 @@ int main() {
         books.push_back(new Book("Оливер Твист", "Диккенс Ч.", 2001));
         books.push_back(new Book("Фауст", "Гёте И.В.", 2010));
         books.push_back(new Book("Лилия долины", "Бальзак О.", 1998));
+        std::vector<int> years;
+        std::transform(books.begin(), books.end(), std::back_inserter(years), Year());
+        int count = std::count_if(years.begin(), years.end(), Greater(2009));
+        std::cout << "Книг новее 2009 года: " << count << std::endl;
         break;
+    }
+    case 5: {
+        Cache<int> cache;
+        cache.put(1);
+        cache.put(2);
+        cache.put(3);
+        cache += 5;
+
+        Cache<std::string> voc;
+        voc.put("OK");
+        std::cout << voc.contains("Only") << std::endl;
+        std::cout << cache.contains(5) << std::endl;
     }
     }
     return 0;
